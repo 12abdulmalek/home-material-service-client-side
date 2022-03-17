@@ -1,0 +1,17 @@
+.review-system{
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+    align-items: center;
+}
+.reviews{
+    width: 250px;
+    margin: 12px;
+    background-color: rgba(0, 255, 255, 0.493);
+    border: 3px solid rgb(62, 175, 184);
+    border-radius: 12px;
+}
+.reviews img{
+      width: 100%;
+}

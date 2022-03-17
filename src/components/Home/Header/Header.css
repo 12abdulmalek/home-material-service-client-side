@@ -1,0 +1,22 @@
+.header-sect{
+    background-color: rgba(127, 255, 212, 0.377);
+}
+.search-bar{
+    width: 80%;
+}
+.search-bar input{
+    height: 50px;
+    width: 78.4%;
+    background-color: transparent;
+    outline: 0px;
+    border: 1px solid rgba(177, 168, 168, 0.479);
+    border-radius: 12px 0px 0px 12px;
+    padding-left: 20px;
+}
+.search-bar button{
+  height: 50px;
+  width: 88px; 
+  border: 0px;
+  background-color: rgba(0, 0, 255, 0.37);
+  border-radius: 0px 12px 12px 0px;
+}

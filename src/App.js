@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import { useEffect, useRef, useState } from 'react';
+import { BrowserRouter, Routes,Route, Link } from 'react-router-dom';
+
+import Home from "./components/Home/Home/Home";
+import Details from './components/Home/Order/Details';
+import ProductReview from './components/Home/ProductReview.js/ProductReview';
+import Login from './components/Login/Login';
+import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
+import Menubar from './components/Share/Menubar';
+import { AuthProvider } from './context/AuthProvider';
 
 function App() {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+     <AuthProvider>
+     <BrowserRouter>
+      <Menubar></Menubar>
+          <Routes>
+            <Route exact path="/" element={<Home/>}/>
+            <Route exact path="home" element={<Home/>}/>
+            <Route  path="details" element={<PrivateRoute>
+              <Details></Details>
+             </PrivateRoute>}/>
+             
+             <Route path="review/:id" element={<ProductReview/>}/>
+             <Route path="login" element={<Login></Login>}/>
+         </Routes>
+      </BrowserRouter>
+     </AuthProvider>
     </div>
   );
 }
