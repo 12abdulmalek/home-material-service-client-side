@@ -22,7 +22,7 @@ const Darkmode = () => {
             projectBody.classList.remove(theme);
             localStorage.setItem("dark",lightmode);
             theme = lightmode;
-            setDarkTheme(theme);
+          
          }
          else{
             console.log(theme);
@@ -30,13 +30,13 @@ const Darkmode = () => {
             projectBody.classList.remove(theme);
             localStorage.setItem("dark",darkmode);
             theme = darkmode;
-            setDarkTheme(theme);
+    
          }
      }
-     const [darkTheme,setDarkTheme] = useState(theme);
+   
     return (
         <div>
-    <button onClick={(e)=>darksite(e)} className="darkButton"> {darkTheme} <BsFillMoonStarsFill/></button>       
+    <button onClick={(e)=>darksite(e)} className="darkButton"> <BsFillMoonStarsFill/></button>       
         </div>
     );
 };

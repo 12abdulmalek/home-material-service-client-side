@@ -14,8 +14,12 @@ code {
 }
 
 .lightMode{
-  background-color: rgb(250, 246, 246);
+  background-color: rgba(204, 185, 185, 0.575);
 }
 .darkMode{
   background-color: rgba(0, 0, 0, 0.945);
+}
+a{
+  color: rgb(0, 4, 255) !important;
+  text-decoration: none !important;
 }

@@ -4,8 +4,8 @@ import img from '../../images/testimonal.jpg'
 const Header = () => {
     return (
         <div className='header-sect'>
-            <div className='container my-5'>
-               <div className='row g-3'>
+            <div className='container my-5 py-4'>
+               <div className='row g-3 align-items-center'>
                <div className='col-sm-12 col-md-8'>
                <div>
                     <h1>ORDER YOUR HOME MATERIAL</h1>

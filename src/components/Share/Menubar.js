@@ -9,22 +9,25 @@ import './menubar.css'
 const Menubar = () => {
    const {user} = useAuth();
   return (
-    <div>
-      <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark" className='container'>
+    <div className='navigation'>
+      <Navbar collapseOnSelect expand="sm"  variant="dark" className='container'>
        
         
             <img alt='' className='rounded-pill' width="18px" height="18px" src={user.photoURL} action=""/>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-             <Link to="/home">home</Link>
+            <Nav className="mx-auto">
+             <Link to="/home"  className='nav-item'>home</Link>
+             <Link to="/service"  className='nav-item'>service</Link>
 
             </Nav>
             <Nav>
-              <Darkmode></Darkmode>
-              <Nav.Link href="#deets">sign up</Nav.Link>
-              <Link to="/login">
-                  login 
+              <Darkmode className='mx-2 '></Darkmode>
+              <Link to="/login" className='nav-item'>
+                  signUp
+               </Link>
+              <Link  to="/login" className='nav-item'>
+                  login
                </Link>
             </Nav>
           </Navbar.Collapse>

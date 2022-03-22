@@ -1,0 +1,29 @@
+.addItem-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(250, 235, 215, 0.568);
+}
+.addItem-form input,textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 12px;
+    border-radius: 7px;
+    background-color: rgba(127, 255, 212, 0.479);
+    border: none;
+    outline: 0;
+}
+.description{
+    width: 100%;
+}
+.update-data input,textarea{
+    display: block;
+    width: 40%;
+    padding: 10px;
+    margin: 12px;
+    border-radius: 7px;
+    background-color: rgba(127, 255, 212, 0.479);
+    border: none;
+    outline: 0;
+}
